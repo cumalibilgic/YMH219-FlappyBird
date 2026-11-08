@@ -33,11 +33,6 @@ Visual Studio'da `YMH219-FlappyBird.csproj` dosyasını açıp F5'e basabilirsin
 - **P:** Duraklat / devam et
 - **Enter:** Yeni oyun
 
-## Ekran görüntüleri
-
-- `screenshots/gameplay.png` — oyun ekranı
-- `screenshots/game-over.png` — oyun sonu ekranı
-
 ## Proje yapısı
 
 - `Models/` — kuş ve boru nesneleri
@@ -55,11 +50,12 @@ Oyun döngüsü Windows Forms `Timer` ile çalışır. Oyun mantığı `GameEngi
 - Öğrenci No: 250541008
 ## Ekran görüntüleri
 
-### Hazır / oynanış ekranı
+### Hazır ekranı
 
 ![Flappy Bird hazır ekranı](screenshots/gameplay.png)
 
 ### Oyun sonu ve skor
 
 ![Flappy Bird oyun sonu ekranı](screenshots/game-over.png)
+
 
