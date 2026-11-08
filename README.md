@@ -51,8 +51,8 @@ Oyun döngüsü Windows Forms `Timer` ile çalışır. Oyun mantığı `GameEngi
 
 ## Öğrenci bilgileri
 
-- Ad Soyad: [Adınızı yazın]
-- Öğrenci No: [Numaranızı yazın]
+- Ad Soyad: Cumali Bilgiç
+- Öğrenci No: 250541008
 ## Ekran görüntüleri
 
 ### Hazır / oynanış ekranı
@@ -62,3 +62,4 @@ Oyun döngüsü Windows Forms `Timer` ile çalışır. Oyun mantığı `GameEngi
 ### Oyun sonu ve skor
 
 ![Flappy Bird oyun sonu ekranı](screenshots/game-over.png)
+
