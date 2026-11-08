@@ -19,8 +19,8 @@ public sealed class MainForm : Form
     {
         Text = "Flappy Bird | YMH 219";
         StartPosition = FormStartPosition.CenterScreen;
-        ClientSize = new Size(480, 700);
-        MinimumSize = new Size(420, 620);
+        ClientSize = new Size(440, 600);
+        MinimumSize = new Size(380, 500);
         BackColor = Color.FromArgb(15, 27, 43);
         Font = new Font("Segoe UI", 9f);
         KeyPreview = true;
@@ -193,3 +193,4 @@ public sealed class MainForm : Form
         _pause.Enabled = _engine.State is GameState.Playing or GameState.Paused;
     }
 }
+
