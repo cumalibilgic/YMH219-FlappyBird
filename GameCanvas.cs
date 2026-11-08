@@ -165,8 +165,8 @@ public sealed class GameCanvas : Control
         using var card = new SolidBrush(Color.FromArgb(238, 255, 255, 255));
         using var border = new Pen(Color.FromArgb(40, 72, 91), 2);
         var box = new RectangleF(45, 174, GameEngine.WorldWidth - 90, 145);
-        g.FillRoundedRectangle(card, box, 18);
-        g.DrawRoundedRectangle(border, box, 18);
+        g.FillRoundedRectangle(card, Rectangle.Round(box), new Size(18, 18));
+        g.DrawRoundedRectangle(border, Rectangle.Round(box), new Size(18, 18));
         using var title = new Font("Segoe UI", 23, FontStyle.Bold, GraphicsUnit.Pixel);
         using var detail = new Font("Segoe UI", 12, FontStyle.Regular, GraphicsUnit.Pixel);
         using var ink = new SolidBrush(Color.FromArgb(30, 52, 66));
@@ -184,3 +184,4 @@ public sealed class GameCanvas : Control
         g.DrawString(text, font, brush, new RectangleF(55, y, GameEngine.WorldWidth - 110, 54), format);
     }
 }
+
