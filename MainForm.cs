@@ -43,7 +43,7 @@ public sealed class MainForm : Form
         };
         root.RowStyles.Add(new RowStyle(SizeType.Absolute, 80));
         root.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-        root.RowStyles.Add(new RowStyle(SizeType.Absolute, 72));
+        root.RowStyles.Add(new RowStyle(SizeType.Absolute, 92));
 
         var header = new Panel { Dock = DockStyle.Fill };
         var title = new Label
@@ -193,4 +193,5 @@ public sealed class MainForm : Form
         _pause.Enabled = _engine.State is GameState.Playing or GameState.Paused;
     }
 }
+
 
