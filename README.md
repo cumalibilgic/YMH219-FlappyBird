@@ -53,3 +53,12 @@ Oyun döngüsü Windows Forms `Timer` ile çalışır. Oyun mantığı `GameEngi
 
 - Ad Soyad: [Adınızı yazın]
 - Öğrenci No: [Numaranızı yazın]
+## Ekran görüntüleri
+
+### Hazır / oynanış ekranı
+
+![Flappy Bird hazır ekranı](screenshots/gameplay.png)
+
+### Oyun sonu ve skor
+
+![Flappy Bird oyun sonu ekranı](screenshots/game-over.png)
