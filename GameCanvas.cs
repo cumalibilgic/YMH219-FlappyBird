@@ -30,6 +30,8 @@ public sealed class GameCanvas : Control
         var offsetY = (ClientSize.Height - GameEngine.WorldHeight * scale) / 2;
         e.Graphics.TranslateTransform(offsetX, offsetY);
         e.Graphics.ScaleTransform(scale, scale);
+        // Tepe ve bulut çizimleri oyun alanının dışına taşmasın.
+        e.Graphics.SetClip(new RectangleF(0, 0, GameEngine.WorldWidth, GameEngine.WorldHeight));
 
         DrawBackground(e.Graphics);
         DrawPipes(e.Graphics);
@@ -113,7 +115,6 @@ public sealed class GameCanvas : Control
 
     private void DrawBird(Graphics g)
     {
-        var bounds = _engine.Bird.Bounds;
         var angle = Math.Clamp(_engine.Bird.VelocityY / 12f, -24f, 55f);
         var state = g.Save();
         g.TranslateTransform(_engine.Bird.X, _engine.Bird.Y);
@@ -133,7 +134,6 @@ public sealed class GameCanvas : Control
         using var pupil = new SolidBrush(Color.FromArgb(36, 48, 57));
         g.FillEllipse(pupil, 8, -9, 4, 5);
         g.Restore(state);
-        _ = bounds;
     }
 
     private void DrawScore(Graphics g)
